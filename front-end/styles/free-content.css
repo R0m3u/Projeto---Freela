@@ -1,0 +1,229 @@
+body {
+    background-color: #E4E6FE !important;
+}
+
+.content-apresentation {
+    height: 65vh;
+    width: 100%;
+    background: url("https://cdn.pixabay.com/photo/2016/06/01/06/26/open-book-1428428_960_720.jpg") no-repeat;
+    background-size: 100% 75%;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.content-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    background-color: black;
+    opacity: .4;
+}
+
+.content-description {
+    position: relative;
+    top: 0;
+    bottom: 60px;
+    /* left: 100px; */
+    /* right: 0; */
+    margin: auto;
+    z-index: 9;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+}
+
+.content-description::after {
+    position: absolute;
+    content: "";
+    width: 80%;
+    height: 4px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* top: 0; */
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+/*==============*/
+body {
+    background-color: #E4E6FE;
+}
+
+.free-material {
+    background-color: #F2F8FC;
+    padding: 0 2rem 2rem 2rem;
+    max-width: 1200px;
+    margin: 3rem auto;
+    position: relative;
+}
+
+
+.btn-container {
+    display: flex;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    top: 0;
+}
+
+.free-lesson {
+    margin-top: 9rem;
+}
+
+.lesson-btn,
+.tools-btn {
+    background-color: transparent;
+    /* color: #5D338B; */
+    color: #fff;
+    border: none;
+    outline: none;
+    margin: 0 auto;
+    /* height: 150px; */
+    width: 100%;
+    font-size: 1.6rem;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    top: 60px;
+    z-index: 9;
+}
+
+
+
+/*left 510px */
+
+.btn-selected {
+    background-color: #5D338B;
+    color: #fff;
+    height: 150px;
+    width: 100%;
+    transition: all .5s ease;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    width: 330px;
+    position: absolute;
+    left: 60px;
+    top: 0;
+    z-index: 1;
+    animation-name: slider; 
+    animation-duration: 2s;
+}
+
+
+
+@keyframes sliderToRight {
+    0% {
+        left: 60px;
+    }
+
+    100% {
+        left: 510px;
+    }
+}
+
+@keyframes sliderToLeft {
+    0% {
+        left: 510px;
+    }
+
+    100% {
+        left: 510px;
+    }
+}
+
+/* .lesson-btn {
+    position: relative;
+    left: 536px;
+    background-color: #000;
+} */
+
+
+.lesson {
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 400px;
+    margin: 5rem auto;
+    
+    border-radius: 20px;
+}
+
+.lesson .img-box {
+    display: flex;
+}   
+
+.lesson .img-box img {
+    height: 100%;
+    width: 100%;
+  
+}
+
+.lesson-description {
+    max-width: 410px;
+    margin-left: 1.2rem;
+    color: #2A1D56;
+    padding: 2rem 1.2rem;
+}
+
+.lesson-description p {
+    margin: 1.2rem 0 1.2rem 0rem;
+}
+
+.lesson-description .more-btn {
+    background-color: #2A1D56;
+    color: #fff;
+    margin: 0;
+}
+
+
+@media screen and (max-width: 767px) {
+    
+    .lesson .img-box img {
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .content-apresentation {
+        background: url("https://cdn.pixabay.com/photo/2016/03/09/15/29/books-1246674_960_720.jpg") no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+        background-attachment: fixed;
+        
+    }
+ 
+    .free-material {
+        padding: 0 4rem 4rem 4rem;
+    }
+
+    .lesson {
+        max-width: 800px;
+
+    }
+    
+    .lesson .img-box {
+        width: 262px;
+        height: 270px;
+        display: flex;
+    }   
+
+    .lesson .img-box img {
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+
+    }
+}

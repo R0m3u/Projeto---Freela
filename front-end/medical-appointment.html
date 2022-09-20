@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./styles/index.css"> -->
+    <link rel="stylesheet" href="./styles/./medical.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- header -->
+    <header class="fixed">
+        <div class="header-container">
+            <div class="overlay"></div>
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="./assets/imgs/logos-versões-10.png" alt="Logo" title="logo" class="logo">
+                </a>
+            </div>
+            <div class="hamburguer-menu">
+                <div class="hamburguer"></div>
+            </div>
+            <nav class="menu menuClose">
+                <ul class="menu-items">
+                    <li><a href="./about.html">Sobre</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./medical-appointment.html" class="selected">Consultas</a></li>
+                    <li><a href="./courses.html">Cursos</a></li>
+                    <li><a href="./free-content.html">Materiais Gratuitos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- header -->
+    <main>
+        <section class="medical-apresentation">
+          <div class="medical-overlay"></div>
+          <h2 class="medical-title">CONSULTAS</h2>
+          <p class="medical-description">
+            Lorem ipsum dolor sit amet, consectetur 
+            adipiscing elit, sed do eiusmod tempor 
+            incididunt ut labore et dolore magna aliqua. 
+          </p>
+        </section>
+        <section class="medical-specialities">
+          <h2>Especialidades</h2>
+          <div class="specialities-container">
+            <div class="card card1">
+              <div class="img-course">
+                <img src="/assets/imgs/wind.jpg" alt="">
+              </div>
+              <div class="course-description">
+                <h4>Title</h4>
+                <p>
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <a href="#" class="course-btn more-btn">Read More1</a>
+              </div>
+            </div>
+            <div class="card card1">
+              <div class="img-course">
+                <img src="/assets/imgs/wind.jpg" alt="">
+              </div>
+              <div class="course-description">
+                <h4>Title</h4>
+                <p>
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <a href="#" class="course-btn more-btn">Read More1</a>
+              </div>
+            </div>
+            <div class="card card1">
+              <div class="img-course">
+                <img src="/assets/imgs/wind.jpg" alt="">
+              </div>
+              <div class="course-description">
+                <h4>Title</h4>
+                <p>
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+                <a href="#" class="course-btn more-btn">Read More1</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="appointment-booking">
+          <section class="appointment-container">
+            <h2>Marque uma consulta</h2>
+            <div class="box">
+              <div class="pacient-info">
+                <div class="block1">
+                  <p>informações pessoais*</p>
+                  <input type="text" name="" id="" placeholder="Nome">
+                  <input type="text" name="" id="" placeholder="Sobrenome">
+                </div>
+                <div class="block2">
+                  <p>informações pessoais*</p>
+                  <div>
+                    <select name="" id="">
+                      <option value="+55">+55</option>
+                      <option value="">+63</option>
+                      <option value="">+251</option>
+                      <option value="">+220</option>
+                      <option value="">+1</option>
+                      <option value="">+34</option>
+                    </select>
+                    <input type="text" name="" id="" placeholder="Número de celular com DDD">
+                  </div>
+               </div>
+                <div class="block3">
+                  <p>informações adicionais</p>
+                  <textarea placeholder="informe qualquer informação que deseje compartilhar com o doutor antes da consulta"></textarea>
+                </div>
+                <div class="block4">
+                  <p>Tipo de consulta*</p>
+                  <div class="input">
+                    <select name="" id="">
+                      <option value="opcao 2">opcao 1</option>
+                      <option value="opcao 2">opcao 2</option>
+                    </select>
+                    <span class="btn">Alterar</span>
+                  </div>
+                </div>
+                <div class="block5">
+                  <p>É sua primeira consulta?</p>
+                  <div class="options">
+                    <input type="radio" value="sim" id="sim" name="first_consultation">
+                    <label for="sim">Sim</label>
+                    <input type="radio" value="não" id="nao" name="first_consultation">
+                    <label for="nao">Não</label>
+                  </div>
+                </div>
+              </div>
+              <div class="day-marking">
+                <div class="calendar">
+                  <div class="month-year">Maio 2022</div>
+                  <div class="week-days">
+                    <span class="selected">S</span>
+                    <span>T</span>
+                    <span>Q</span>
+                    <span>Q</span>
+                    <span>S</span>
+                    <span>S</span>
+                    <span>D</span>
+                  </div>
+                  <div class="days"></div>
+                </div>
+                <div class="time-stamp">
+                  <p>Horário da consulta*</p>
+                  <div class="hour-select">
+                    <div class="hour">
+                      <span>00</span>
+                      <span>:</span>
+                      <span>00</span>
+                    </div>
+                    <span class="system-hour">AM</span>
+                  </div>
+                </div>
+              </div>
+            </div> 
+            <section class="terms">
+              <div class="accept">
+                <input type="checkbox" id="accept">
+                <label for="accept">Confirmo meus dados, e desejo agendar a consulta</label>
+              </div>
+              <div>
+                <a href="#" class="confirm-btn">Confirmar</a>
+              </div>
+            </section> 
+          </section>
+        </section>
+      </main> 
+    <footer>
+      <section class="info">
+        <div class="contact">
+          <p class="main-title">Contato</p>
+          <p>9999-9999</p>
+          <p>9999-9999</p>
+        </div>
+        <div class="clinic">
+          <p class="main-title">Consultório</p>
+          <p>Lorem ipsum dolor sit amet</p>
+          <p>Lorem ipsum dolor sit amet</p>
+        </div>
+        <div class="social-media">
+          <p class="main-title">Redes Sociais</p>
+          <a href="#" class="instagram">
+            <img src="/assets/imgs/instagram.png" alt="instagram" title="instagram">
+          </a>
+          <a href="#" class="whatsapp">
+            <img src="/assets/imgs/whatsapp.png" alt="whatsapp" title="whatsapp">
+          </a>
+        </div>
+      </section>
+      <section class="copyright">
+        <p>&#169;Copyright </p><span>|</span>
+        <p>Name </p><span>|</span>
+        <p>Lorem Lorem</p>
+      </section>
+    </footer>
+    <script src="./node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="./scripts/dateTimePicker.js"></script>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>

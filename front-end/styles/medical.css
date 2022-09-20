@@ -1,0 +1,500 @@
+/*==============MAIN / HERO SECTION================*/
+
+.medical-apresentation {
+    height: 65vh;
+    width: 100%;
+    background: url("/assets/imgs/consultas_back_2.png") no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.medical-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    background-color: black;
+    opacity: .4;
+}
+
+.medical-title {
+    position: relative;
+    top: 100px;
+    font-weight: 700;
+    color: #fff;
+    font-size: 2.4rem;
+    height: 70px;
+}
+
+.medical-title::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 90%;
+    height: 4px;
+    background-color: #fff;
+
+}
+
+.medical-description {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 9;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    text-align: center;
+    max-width: 420px;
+    width: 80%;
+    margin-top: 3.5rem;
+
+}
+/*==============MAIN / HERO SECTION================*/
+
+/* ============MAIN / ESPECIALIDADES MEDICAS========================= */
+.medical-specialities h2 {
+    text-align: center;
+}
+
+.medical-specialities h2 {
+    color: #5D338B;
+    font-weight: 900;
+    position: relative;
+    padding: 1rem 0;
+}
+
+.medical-specialities h2:after {
+    content: "";
+    position: absolute;
+    width: 135px;
+    height: 4px;
+    background-color: #5D338B;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.specialities-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 430px));
+    padding: 4rem 0 2rem 0;
+}
+
+
+.card {
+    max-width: 300px;
+}
+
+.img-course img {
+    max-width: 300px;
+}
+
+/* ============MAIN / ESPECIALIDADES MEDICAS========================= */
+
+/* ============MAIN / MARCAÇÃO DE CONSULTAS========================= */
+.appointment-booking {
+    background-color: #E4E6FE;
+    padding-top: 5rem;
+}
+
+.appointment-container {
+    width: 90%;
+    height: max-content;
+    margin: 0 auto;
+    background-color: #fff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    /* display: flex; */
+    padding-top: 5rem;
+}
+
+.pacient-info {
+    padding: 0 2rem;
+}
+
+.appointment-container h2 {
+    color: #5D338B;
+    margin: 0 0 3rem 2rem;
+    
+    font-weight: 900;
+
+}
+
+.block1 p,
+.block2 p,
+.block3 p,
+.block4 p,
+.block5 p {
+    color: #5D338B;
+    font-weight: 800;
+    font-size: .9rem;
+    margin-bottom: 1rem;
+}
+
+.block3 p,
+.block4 p,
+.block5 p {
+    margin-top: 1rem;
+}
+
+.block1 input,
+.block2 input,
+.block3 input,
+.block4 input,
+.block5 input {
+    height: 2rem;
+    border: none;
+    outline: none;
+    background-color: #F6F6F6;
+    padding: 1.3rem 1rem;
+    border-radius: 50px;
+    color: #5D338B;
+    font-size: .9rem;
+}
+
+.block1 ::-webkit-input-placeholder,
+.block2 ::-webkit-input-placeholder,
+.block4 ::-webkit-input-placeholder,
+.block5 ::-webkit-input-placeholder {
+    font-weight: 900;
+    color: #5D338B;
+}
+
+
+.block1 input {
+    width: 100%;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.block2 div {
+    display: flex;
+}
+
+.block2 select { 
+    height: 41.59px;
+    border: none;
+    background-color: #F6F6F6;
+    color: #5D338B;
+    font-weight: 800;
+    border-radius: 50px;
+    padding: 0 1rem;
+    margin-right: 18px;
+}
+
+.block2 select option {
+    margin-right: 1rem;
+}
+
+.block2 input {
+    width: 80%;
+}
+
+.block3 textarea {
+    resize: none;
+    width: 100%;
+    height: 6rem;
+    padding: 1rem;
+    background-color: #F6F6F6;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    color: #5D338B;
+}
+
+.block3 ::-webkit-input-placeholder {
+    color: #5D338B;
+}
+
+.block4 .input {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.block4 .input select {
+    width: 100%;
+    height: 41.59px;
+    background-color: #F6F6F6;
+    border-radius: 50px;
+    border: none;
+    color: #5D338B;
+    font-weight: 800;
+    font-size: .9rem;
+    padding-left: .9rem; 
+    appearance: none;
+    outline: none;
+}
+
+
+.block4 .input .btn {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 41.59px;
+    width: 30%;
+    background-color: #5D338B;
+    color: #fff;
+    font-weight: 800;
+    line-height: 41.59px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    text-align: center;
+}
+
+.block5 .options {
+    display: flex;
+    align-items: center;
+    color: #5D338B;
+    font-weight: 600;
+}
+
+.options input {
+    margin-right: 15px;
+}
+
+.options label {
+    margin-right: 3rem;
+}
+
+.options label:last-child {
+    margin: 0;
+}
+
+
+
+/*========================MAIN / CALENDARIO=============*/
+
+.day-marking {
+    /* margin-top: 2.063rem; */
+    margin-top: 1.875rem;
+    padding:  0 2rem;
+}
+
+.calendar {
+    width: max-content;
+    height: max-content;
+    background-color: #F6F6F6;
+    padding: 1rem 1.7rem .5rem 1.7rem;
+    border-radius: 30px;
+}
+
+.month-year {
+    color: #5D338B;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.week-days {
+    background-color: #341C4D;
+    color: #fff;
+    font-size: .9rem;
+    height: 33px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    border-radius: 30px;
+}
+
+.week-days span {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 33px;
+    text-align: center;
+    padding: 0 .4rem;
+}
+
+.week-days span:first-child {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.week-days span:last-child {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px; 
+}
+
+.selected {
+    background-color: #5D338B;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: repeat(7, max-content);
+    justify-items: center;
+    margin-top: 1rem;
+}
+
+
+.days p {
+    width: 29px;
+    height: 40px;
+    padding: 1px 0;
+    text-align: center;
+    color: #5D338B; 
+    line-height: 40px;
+    border-radius: 10px;
+}
+
+.days p:hover {
+    background-color: #5D338B;
+    color: #fff;
+}
+
+/*==========MAIN / SELECAO DE HORARIO========================================*/
+.time-stamp {
+    margin-top: 2.8rem;
+    
+}
+
+.time-stamp p {
+    color: #5D338B;
+    font-weight: 800;
+    font-size: .9rem;
+    margin-bottom: 1.4rem;
+}
+
+.hour-select {
+    background-color: #F6F6F6;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    height: 42px;
+    line-height: 42px;
+}
+
+.hour-select span {
+    margin-right: 10px;
+}
+
+.hour-select span:last-child {
+    margin: 0;
+}
+
+.hour {
+    width: 70%;
+    text-align: center;
+    font-weight: 800;
+    font-size: 1rem;
+    color: #5D338B;
+}
+
+.system-hour {
+    display: block;
+    background-color: #5D338B;
+    color: #fff;
+    width: 30%;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    text-align: center;
+    font-weight: 800;
+}
+
+/* ===================================== */
+
+.terms {
+    margin-top: 4rem;
+    width: 100%;
+    height: 120px;
+    background-color: #D9D9D9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+}
+
+.accept {
+    font-size: .9rem;
+    font-weight: 600;
+    color: #5D338B;
+    margin-right: 1rem;
+}
+
+.accept input {
+    margin-right: 15px;
+}
+
+.confirm-btn {
+    text-decoration: none;
+    color: #5D338B;
+    background-color: #fff;
+    font-weight: 700;
+    font-size: 1.2rem;
+    height: 70px;
+    padding: .6rem 1rem;
+    line-height: 70px;
+    border-radius: 50px;
+    transition: all .4s ease;
+}
+
+.confirm-btn:hover {
+    background-color: #5D338B;
+    color: #fff;
+}
+
+/* ============MAIN / MARCAÇÃO DE CONSULTAS========================= */
+
+@media screen and (min-width:768px) {
+    .medical-apresentation {
+        background: url("/assets/imgs/consultas_back.png") no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    
+    .appointment-container .box {
+        display: flex;
+        justify-content: center;
+    }
+
+    .appointment-container h2 {
+        max-width: 925px;
+        margin: 0 auto 3rem auto;
+        font-size: 1.8rem;
+    }
+    
+
+    .pacient-info {
+        margin-right: 5.875rem;
+    }
+
+    .block1 input {
+        width: 500px;
+    }
+
+    .block2 input {
+        width: 400px;
+    }
+
+    .block3 textarea {
+        /* width: ; */
+    }
+
+    .block4 .input .btn {
+        width: 20%;
+    }
+
+    .confirm-btn {
+        padding: .6rem 5rem;
+    }
+
+    .accept {
+        font-size: 1.2rem;
+        margin: 5.25rem;
+    }
+}

@@ -1,0 +1,437 @@
+/*==============MAIN / HERO SECTION================*/
+
+.courses-apresentation {
+    height: 65vh;
+    width: 100%;
+    background: url("/assets/imgs/courses_back_2.png") no-repeat;
+    background-size: 100% 75%;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.courses-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    background-color: black;
+    opacity: .4;
+}
+
+.courses-description {
+    position: absolute;
+    top: 0;
+    bottom: 60px;
+    /* left: 100px; */
+    /* right: 0; */
+    margin: auto;
+    z-index: 9;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 900;
+}
+/*==============MAIN / HERO SECTION================*/
+/*==============MAIN / SECAO CURSOS================*/
+
+.courses-cards h2 {
+    font-size: 1.8rem;
+    color: #2A1D56;
+    text-align: center;
+    position: relative;
+    padding: 2rem 0 1rem 0;
+    margin-bottom: 4rem;
+}
+
+.courses-cards h2:after {
+    content: "";
+    position: absolute;
+    width: 135px;
+    height: 4px;
+    background-color: #2A1D56;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+
+.courses-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(310px, 230px));
+    padding-bottom: 2rem;
+}
+
+.card {
+    max-width: 260px;
+}
+
+.img-course img {
+    max-width: 260px;
+}
+
+/*==============MAIN / SECAO CURSOS================*/
+
+/*==============MAIN / SECAO ESTATISTICAS================*/
+.statistics {
+    background-color: #E4E6FE;
+    padding: 2rem 0;
+}
+
+.statistics h2 {
+    text-align: center;
+    color: #2A1D56;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 1rem ;
+    margin-bottom: 2rem;
+    font-weight: 900;
+}
+
+.statistics h2:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 135px;
+    height: 4px;
+    background-color: #2A1D56;
+    margin: 0 auto;
+}
+
+.statistics-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #5D338B;
+    text-align: center;
+}
+
+.statistics-container div {
+    margin-bottom: 2rem;
+}
+
+.statistics-container .number {
+    font-size: 3rem;
+    font-weight: 700;
+}
+/*==============MAIN / SECAO ESTATISTICAS================*/
+
+/*==============MAIN / SECAO DEPOIMENTOS==============================*/
+.depositions {
+    padding-bottom: 2rem;
+}
+
+.depositions h2 {
+    text-align: center;
+    color: #2A1D56;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 1rem ;
+    margin-bottom: 2rem;
+    font-weight: 900;
+    margin-top: 2rem;
+}
+
+.depositions h2:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 105px;
+    height: 4px;
+    background-color: #2A1D56;
+    margin: 0 auto;
+}
+
+.text-deposition {
+    max-width: 450px;
+    margin: 0 auto 4rem auto;
+    
+}
+
+.text-deposition p {
+    color: #2A1D56;
+    text-align: center;
+    line-height: 1.4rem;
+    font-size: 1rem;
+    padding: 0 2rem;
+}
+
+
+.text-deposition .name, 
+.text-deposition .academic-training,
+.video-deposition .name,
+.video-deposition .academic-training {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #2A1D56;
+}
+
+.text-deposition .name,
+.video-deposition .name {
+    margin: 1rem 0 .3rem 0;
+}
+
+.depositions-container {
+    position: relative;
+}
+
+.depositions-container .owl-dots {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.depositions-container .owl-dots .owl-dot span {
+    background-color: #E4E6FE!important;
+}
+
+.depositions-container .owl-dots .owl-dot.active span {
+    background-color: #a0d4fc!important;
+    opacity: .6;
+}
+
+/* .owl-carousel .owl-item img {
+    max-width: 48px!important;
+} */
+
+/* video styles */
+.videos-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* padding: 2rem; */
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.video-info {
+    text-align: center;
+}
+
+.video-container {
+    position: relative;
+    height: 100%;
+    /* overflow: hidden; */
+    transition: all .4s ease;
+}
+
+.video-container video {
+    width:300px;
+    height: 168.75px;
+    background: url("/assets/imgs/woman-hero.jpg");
+    background-size: 100%;
+    border-radius: 10px;
+}
+
+.video-container .control {
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    height: 48px;
+    width: 48px;
+    cursor: pointer;
+}
+
+.controls {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 2px;
+    width: 100%;
+    max-width: 300px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    visibility: hidden;
+    background-color: rgba(105, 105, 105, 0.3);
+    padding: .4rem .8rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.controls .mute {
+    width: 15px;
+    height: auto;
+    margin-top: .8rem;
+    cursor: pointer;
+}
+
+.controls .volume {
+    height: 5px;
+    width: 60px;
+    position: absolute;
+    top: 11px;
+    left: -110px;
+    bottom: 0;
+    right: 0;
+    margin: auto 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.volume-box {
+    height: 30px;
+    width: 120px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    display: flex;
+    align-items: center;
+}
+
+.control .mute:hover .volume {
+    left: 50px;
+}
+
+
+.controls .time {
+    position: absolute;
+    top: 21px;
+    bottom: 0;
+    color: #fff;
+    font-weight: 700;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    margin-right: 15px;
+    width: 200px;
+    height: 7px;
+    border-radius: 5px;
+    background-image: linear-gradient(#864cc4, #864cc4);
+    background-size: 85% 100%;
+    background-repeat: no-repeat;
+}
+  
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #864cc4;
+    cursor: ew-resize;
+    box-shadow: 0 0 2px 0 #555;
+    transition: background .3s ease-in-out;
+    cursor: pointer;
+}
+  
+  input[type=range]::-webkit-slider-runnable-track  {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+}
+
+  .controls .full_screen {
+    width: 18px;
+    height: auto;
+    cursor: pointer;
+    float: right;
+    margin-top: .8rem;
+    margin-right: .5rem;
+}
+
+.video-container .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#5d338b;
+    padding: .4rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: .4rem .8rem 0 0;
+
+}
+
+.video-container .buttons .play,
+.video-container .buttons .pause {
+    background: none;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.video-container .buttons .pause {
+    display: none;
+}
+
+.video-container .buttons .full_screen {
+    cursor: pointer;
+}
+
+.video-container:hover .controls {
+    visibility: visible;
+    transition: all .5s ease;
+}
+
+.minimize {
+    display: none;
+}
+
+.progress-bar {
+    height: 6px;
+    width: 100%;
+    background-color: #fff;
+    opacity: .8;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.purple-bar {
+    height: 100%;
+    width: 0;
+    background-color: #5D338B;
+    position: relative;
+}
+/* video styles */
+
+/*==============MAIN / SECAO DEPOIMENTOS==============================*/
+
+@media screen and (min-width: 768px) {
+    .courses-apresentation {
+        background: url("/assets/imgs/courses_back.png") no-repeat;
+        background-size: 100% 75%;
+        background-position: center;
+        background-attachment: fixed;
+        
+    }
+   
+    .courses-description {
+        left: 100px;
+        right: 0;
+    }
+
+    .statistics-container {
+        flex-direction: row;
+
+    }
+
+    /* .video-deposition video {
+        width: 300px;
+    } */
+}

@@ -24,7 +24,7 @@ $('.cards').owlCarousel({
 });
 
 $('.events').owlCarousel({
-    stagePadding: 60,
+    stagePadding: 25,
     loop:false,
     margin: 30,
     navText: ["<img src='/assets/imgs/preview.png'>", "<img src='/assets/imgs/next.png'>"],
@@ -41,5 +41,19 @@ $('.events').owlCarousel({
             nav: true,
         }
     }
+    
+  });
+
+  $('.academic-carrer').owlCarousel({
+    loop:true,
+    items: 1,
+    dots: true,
+    
+  });
+
+  $('.depositions-container').owlCarousel({
+    loop:true,
+    items: 1,
+    dots: true,
     
   });

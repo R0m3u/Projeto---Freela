@@ -1,0 +1,433 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-color: #F2F8FC;
+}
+
+.none {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+/*============================HEADER/MENU CSS=================================*/
+
+header {
+    height: 88px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #5d338b;
+    position: relative;
+    z-index: 99;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2.5rem;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0;
+    transition: all ease .7s;
+    z-index: 99;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1980px;
+
+}
+
+.header-container a {
+    color: #fff;
+}
+
+
+.fixed {
+    position: sticky;
+    right: 0;
+    left: 0;
+    top: 0;
+    background-color: #5d338b;
+    transition: all ease .7s;
+    z-index: 99;
+}
+
+.fixed a {
+    color: #fff;
+}
+
+.hamburguer-menu {
+    cursor: pointer;
+}
+
+.hamburguer,
+.close {
+    position: relative;
+    width: 20px;
+    height: 4px;
+    background-color: #fff;
+    transition: all ease .4s;
+    z-index: 9;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.close {
+    background-color: transparent;
+    transition: all ease .4s;
+    z-index: 9;
+}
+
+.menuClose {
+    width: 0;
+    transition: all ease .4s;
+}
+
+
+.hamburguer::after,
+.hamburguer::before,
+.close::after,
+.close::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 4px;
+    background-color: #fff;
+    transition: all ease .4s;
+    z-index: 9;
+    border-radius: 4px;
+
+   
+}
+
+.hamburguer::after {
+    top: 10px;
+}
+
+.hamburguer::before {
+    bottom: 10px;
+}
+
+.close::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+.close::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+
+nav {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 70%;
+    background-color: #5d338b;
+    transition: all ease .2s;
+}
+
+.menu-items {
+    list-style: none;
+    position: absolute;
+    /* left: 235px; */
+    left: 50px;
+    margin-right: 2rem;
+    top: 10rem;
+    display: none;
+}
+
+.menu-items li {
+    font-size: 1.2rem; 
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+.menu-items li a {
+    position: relative;
+    padding-bottom: 5px;
+    font-weight: 500;
+}
+
+.menu-items a::after, 
+.menu-items .selected::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 0;
+    transition: all ease .4s;
+
+}
+
+.menu-items a:hover::after {
+    width: 100%;
+    color: #fff;
+}
+
+.menu-items .selected::after {
+    width: 100%;
+}
+
+.menu-items a {
+    text-decoration: none;
+}
+
+.logo > a > img {
+    width: 180px;
+    height: auto;
+}
+
+.block {
+    display: block;
+}
+
+.none {
+    display: none;
+}
+
+.overlay {
+    position: absolute;
+    background-color: black;
+    opacity: .2;
+    height: 100vh;
+    width: 0;
+    top: 0;
+    right: 0;
+    transition: all ease .2s;
+    z-index: -99;
+}
+
+.openOverlay {
+    width: 100%;
+}
+
+
+.more-btn {
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 2rem;
+    border-radius: 10px;
+    transition: all ease .4s;
+    width: 180px;
+    text-align: center;
+    padding: .5rem 0;
+    border-radius: 40px;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+
+
+
+/*============================HEADER/MENU CSS=================================*/
+
+/*======================FOOTER================================================*/
+footer {
+    /* display: flex; */
+    color: #fff;
+    background-color: #341C4D;
+ 
+}
+
+footer .info {
+    width: 100%;
+    max-width: 835px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-between;
+    background-color: #341C4D;
+    padding: 3rem 1rem;
+    line-height: 1.5rem;
+}
+
+.contact, 
+.clinic,
+.social-media {
+    margin-bottom: 3rem;
+}
+
+.contact,
+.clinic {
+    /* margin-right: 1rem; */
+}
+
+.social-media img {
+    margin-right: 1rem;
+}
+
+
+.contact .main-title,
+.clinic .main-title,
+.social-media .main-title {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;    
+}
+
+.copyright p {
+    margin:0 1rem;
+}
+
+footer .copyright {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    background-color: #5D338B;
+    padding: 1rem 0;
+}
+/*======================FOOTER================================================*/
+
+.card {
+    height: 100%;
+    /* max-width: 290px; */
+    /* max-width: 300px; */
+    border-radius: 30px !important; 
+    margin: 0 auto;
+    margin-bottom: 4rem;
+}
+
+.img-course img {
+    width: 100%;
+    /* max-width: 290px; */
+    /* max-width: 300px; */
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.course-description {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    color: #2A1D56;
+
+}
+
+.course-description h4 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.course-description p {
+    font-weight: 600;
+
+}
+
+.course-btn {
+    background-color: #5D338B;
+    color: #fff;
+}
+
+.more-btn:hover {
+    background-color: #49286d;
+}
+
+
+@media screen and (min-width: 920px) {
+    /*========================MEDIA QUERIE - HEADER/MENU CSS==================================*/
+    .hamburguer-menu {
+        display: none;
+    }
+
+    nav {
+        display: block;
+        position: initial;
+        background-color: transparent;
+        height: initial;
+        width: 100%;
+
+    }
+
+    .menu-items {
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        height: 100%;
+        width: 80%;
+        margin-right: 2.5rem;
+        /* margin: 0; */
+        top: 0;
+        right: 0;
+        left: 60px;
+        float: right;
+    }
+
+    .menu-items li {
+        margin: 0;
+        margin-left: 3rem;
+        
+    }
+
+    .overlay {
+        display: none;
+    }
+
+    .content .description {
+        padding-right: 2rem;
+    }
+
+    /*========================MEDIA QUERIE - HEADER/MENU CSS==================================*/
+    
+    .contact, 
+    .clinic,
+    .social-media {
+        margin-bottom: 0rem;
+    }
+
+}
+
+@media screen and (max-width: 390px) {
+    /*========================MEDIA QUERIE - HEADER/MENU CSS==================================*/
+    .card-presentation {
+        height: 100vh;
+    }
+
+    .text-box {
+        padding: 0;
+    }
+
+    .description {
+        padding: 0 1rem;
+    }
+
+    .card-presentation .content {
+        position: relative;
+    }
+
+    .content .buttons {
+        flex-direction: column;
+    }
+
+    .content .buttons a {
+        max-width: 280px;
+    }
+
+    .content .buttons a:first-child {
+        margin-bottom: 1.5rem;
+    }
+
+    /*========================MEDIA QUERIE - HEADER/MENU CSS==================================*/
+}
+
+@media screen and (min-width: 1020px) {
+    .menu-items {
+        left: 230px;
+    }
+}
