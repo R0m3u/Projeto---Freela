@@ -23,7 +23,7 @@
 }
 
 .my-description {
-    padding: 2rem 3rem;
+    padding: 2rem;
     max-width: 610px;
     display: flex;
     flex-direction: column;
@@ -83,6 +83,12 @@
     font-weight: 700;
     line-height: 1.6rem;
 }   
+
+.carrer-description .curriculum-btn {
+    font-size: 1rem!important;
+    color: #fff;
+    background-color: #2A1D56;
+}
 
 .academic-carrer {
     position: relative;
@@ -162,6 +168,9 @@
 
 } 
 
+.card .course-description h4 {
+    text-decoration: underline;
+}
 
 /* ============MAIN / PUBLICAÇÕES CIENTÍFICAS========================= */
 
@@ -169,6 +178,7 @@
 @media screen and (min-width: 768px) {
     .about-me {
         flex-wrap: nowrap;
+        align-items: center;
     }
     
     .academic-container {

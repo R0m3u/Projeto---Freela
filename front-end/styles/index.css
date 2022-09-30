@@ -36,8 +36,8 @@
     font-size: 1.4rem;
     line-height: 2rem;
     margin-top: 2rem;
-    max-width: 800px;
-    font-weight: 300;
+    max-width: 650px;
+    font-weight: 500;
     text-align: center;
     padding: 0 2rem;
 }
@@ -63,7 +63,7 @@
     border-radius: 40px;
     transition: all ease .4s;
     width: 100%;
-    max-width: 180px;
+    /* max-width: 180px; */
     padding: .5rem 0;
     margin: 0 auto;
     display: block;
@@ -131,7 +131,7 @@
     content: "";
     position: absolute;
     width: 18px;
-    height: 96px;
+    height: 60px;
     background-color: #E592FA;
     left: 15px;
 }
@@ -149,7 +149,7 @@
 }
 
 .about-text p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     line-height: 1.5;
 }
 
@@ -217,8 +217,8 @@
 
 .value-name {
     color: #fff;
-    font-size: 3rem;
-    font-weight: 500;
+    font-size: 1.7rem;
+    font-weight: 600;
     text-align: center;
     position: relative;
     top: 40%;
@@ -229,6 +229,7 @@
 
 .value-description {
     color: #fff;
+    font-size: 1.1rem;
     position: relative;
     height: 80%;
     padding: 1rem;
@@ -406,13 +407,28 @@
 }
 
 .scheduling-description h1 {
-    margin-bottom: 1.3rem;
+    margin-bottom: .5rem;
     font-weight: 800;
+}
+
+.scheduling-description h4 {
+    margin-bottom: 1.3rem;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.scheduling-description h4  span {
+    color: #5d338b;
+    font-weight: 700;
 }
 
 .scheduling-description p {
     line-height: 1.5;
 
+}
+
+.scheduling-description p span {
+    font-weight: 800;
 }
 
 .scheduling-description .more-btn {
@@ -873,7 +889,7 @@ input[type="range"] {
         content: "";
         position: absolute;
         width: 26px;
-        height: 96px;
+        height: 60px;
         background-color: #E592FA;
         left: -46px;
     }
@@ -1019,13 +1035,13 @@ input[type="range"] {
         display: flex;
         align-items: center;
         /* justify-content: center; */
-        max-width: 400px;
+        max-width: 700px;
         margin: 2rem 0 0 0;
     }
 
 
     .content .buttons a {
-        width: 240px;
+        /* width: 240px; */
         font-size: 1.4rem;
         margin: 0;
      

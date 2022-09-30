@@ -321,12 +321,13 @@ footer .copyright {
 }
 
 .course-description h4 {
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin-bottom: 1rem;
+    font-weight: 800;
 }
 
 .course-description p {
-    font-weight: 600;
+    font-weight: 500;
 
 }
 

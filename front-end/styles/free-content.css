@@ -71,9 +71,11 @@ body {
     display: flex;
     align-items: center;
     max-width: 900px;
+    /* height: 300px; */
     margin: 0 auto;
     position: relative;
     top: 0;
+    /* overflow: hidden; */
 }
 
 .free-lesson {
@@ -83,72 +85,50 @@ body {
 .lesson-btn,
 .tools-btn {
     background-color: transparent;
-    /* color: #5D338B; */
-    color: #fff;
+    color: #5D338B;
+    color: #5D338B;
     border: none;
     outline: none;
     margin: 0 auto;
-    /* height: 150px; */
+    height: 100px;
     width: 100%;
-    font-size: 1.6rem;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    font-size: 1rem;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
     font-weight: 800;
     cursor: pointer;
     position: relative;
-    top: 60px;
+    /* top: 40px; */
     z-index: 9;
 }
 
-
-
-/*left 510px */
-
-.btn-selected {
-    background-color: #5D338B;
+.active {
     color: #fff;
-    height: 150px;
-    width: 100%;
-    transition: all .5s ease;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    width: 330px;
-    position: absolute;
-    left: 60px;
-    top: 0;
-    z-index: 1;
-    animation-name: slider; 
-    animation-duration: 2s;
+    transition: all 1s ease;
+    color: #fff;
+    background-color: #5D338B;
+    transition: all 1s ease;
+    height: 100px;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
 }
 
 
+.tools-for-service {
+    margin-top: 9rem;
+}
 
-@keyframes sliderToRight {
+@keyframes UpToDown {
     0% {
-        left: 60px;
+        transform: translateY(100px);
+        opacity: 0;
     }
 
     100% {
-        left: 510px;
+        transform: translateY(0);
+        opacity: 1;
     }
 }
-
-@keyframes sliderToLeft {
-    0% {
-        left: 510px;
-    }
-
-    100% {
-        left: 510px;
-    }
-}
-
-/* .lesson-btn {
-    position: relative;
-    left: 536px;
-    background-color: #000;
-} */
-
 
 .lesson {
     background-color: #fff;
@@ -157,9 +137,10 @@ body {
     align-items: center;
     max-width: 400px;
     margin: 5rem auto;
-    
     border-radius: 20px;
+    animation: UpToDown 1s 1;
 }
+
 
 .lesson .img-box {
     display: flex;
@@ -188,9 +169,39 @@ body {
     margin: 0;
 }
 
+.none {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+.not-avaible-container {
+    background-color: #fff;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 8rem;
+    color: #2A1D56;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.not-avaible {
+    display: block;
+    height:8rem;
+}
+
+.not-avaible .text {
+    width: 100%;
+
+}
 
 @media screen and (max-width: 767px) {
-    
+    .btn-container {
+        /* top: -40px; */
+    }
+
     .lesson .img-box img {
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
@@ -226,4 +237,15 @@ body {
         border-bottom-left-radius: 20px;
 
     }
+
+    .lesson-btn, .tools-btn {
+        font-size: 1.6rem;
+    }
+
+    .btn-selected {
+        width: 330px;
+        left: 60px;
+    }
+
+
 }

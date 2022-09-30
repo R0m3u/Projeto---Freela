@@ -1,0 +1,70 @@
+.post-container {
+    color: #2A1D56;
+    padding: 0 2rem;
+}
+
+.post-container h1 {
+    text-align: center;
+    font-weight: 700;
+    max-width: 700px;
+    margin: 4rem auto 0 auto;
+}
+
+.post-container {
+    text-align: center;
+    font-weight: 800;
+}
+
+.teacher-name {
+    text-align: center;
+    text-decoration: underline;
+    margin-top: .7rem;
+}
+
+.academic-record {
+    text-align: center;   
+    text-decoration: underline;
+    margin: 1rem 0 5rem 0;
+    font-weight: 500;
+    font-size: .8rem;
+    line-height: 1;
+}
+
+
+
+.academic-record p {
+    line-height: 1.5rem;
+}
+
+.post-text {
+    font-weight: 400;
+    max-width: 820px;
+    margin: 0 auto;
+    text-align: initial;
+    line-height: 1.3rem;
+}
+
+.post-text p {
+    margin-bottom: 1.6rem;
+}
+
+.references {
+    max-width: 820px;
+    text-align: initial;
+    margin: 0 auto 4rem auto;
+    font-size: .7rem;
+}
+
+.references h2 {
+    margin-bottom: 1rem;
+}
+
+.references p {
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 767px) {
+    .post-container h1 {
+        font-size: 1rem;
+    }
+}

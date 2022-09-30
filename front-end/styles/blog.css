@@ -51,7 +51,6 @@
 /*=================POSTS STYLES======================*/
 .post {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     max-width: 730px;
@@ -62,20 +61,19 @@
 .post img {
     height: 220px;
     width: 220px;
-    /* width: 100%; */
-    /* height: 100%; */
     max-width: 400px;
     max-height: 400px;
-    /* margin: 0 auto; */
     border-radius: 30px;
 }
 
-.post-description {
-    /* margin-left: 2rem; */
+.post-description a {
+    color:  #2A1D56;
 }
 
 .post-description .title {
     font-weight: 800;
+    font-size: 1.2rem;
+    text-decoration: underline;
 }
 
 .post-description .text {
@@ -90,6 +88,7 @@
     .post {
         padding: 0 1rem;
         justify-content: center;
+        flex-wrap: wrap;
     }
 
     .post a {
@@ -107,5 +106,11 @@
         margin-top: 3rem;
         margin-bottom: 2rem;
   
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .post-description {
+        margin-left: 2rem;
     }
 }

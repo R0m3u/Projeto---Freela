@@ -5,7 +5,6 @@
   const menuItems = document.querySelector('.menu > ul');
   const overlay = document.querySelector('.overlay');
 
-
   menuBtn.addEventListener('click', (e) => {
     menuBtn.classList.toggle('close');
 
@@ -26,63 +25,56 @@
 
   // MUDA CONTEUDO
   const buttons = document.querySelectorAll('.btn-container > button');
-  // const btnSelected = document.querySelector('.btn-selected');
-  // const EffectToRight = {left: '510px'};
-  // const EffectToleft = {left: '60px'};
-  // const EffectDuration = {duration: 1000, iteration: 2};
+  const btnSelected = document.querySelector('.btn-selected');
+  const lessons = document.querySelector('.free-lesson');
+  const tools = document.querySelector('.tools-for-service');
 
-
-  const MouseOverIsTruted =
-  buttons[0].addEventListener('mouseover', (event) => {
-    if (event) return event;
-    // else return event.;
+  window.addEventListener('resize', () => {
+    console.log(navigator.userAgent, window.screen.width);
   });
 
-  console.log(MouseOverIsTruted);
+  buttons.forEach((el, i) => {
+    el.addEventListener('mouseover', (eMouse) => {
+      const rect = el.getBoundingClientRect();
+      const position = {
+        top: rect.top,
+        bottom: rect.left,
+      };
 
-  // buttons.forEach((el, i) => {
-  //   el.addEventListener('mouseover', (eMouse) => {
-  //     console.log(i);
+      console.log(position.top, position.bottom);
+      if (i === 0) {
+        btnSelected.style.left = '60px';
+        btnSelected.style.transition = 'all 1s ease';
+        lessons.style.display = 'block';
+        tools.style.display = 'none';
+        buttons[0].classList.add('active');
+        buttons[1].classList.remove('active');
+      } else if (i === 1) {
+        btnSelected.style.left = '510px';
+        btnSelected.style.transition = 'all 1s ease';
+        tools.style.display = 'block';
+        lessons.style.display = 'none';
+        buttons[1].classList.add('active');
+        buttons[0].classList.remove('active');
+      }
+    });
+  });
 
-  //     if (i === 0) {
-  //       btnSelected.style.left = '60px';
-  //       btnSelected.style.transition = 'all 1s ease';
-  //     } else if (i === 1) {
-  //       btnSelected.style.left = '510px';
-  //       btnSelected.style.transition = 'all 1s ease';
-  //     }
-  //   });
-
-  //   el.addEventListener('mouseout', (e) => {
-  //     if (i === 1) {
-  //       btnSelected.style.left = '60px';
-  //       btnSelected.style.transition = 'all 1s ease';
-  //     } else if (i === 0) {
-  //       btnSelected.style.left = '510px';
-  //       btnSelected.style.transition = 'all 1s ease';
-  //     }
-  //   });
-
-
-  // el.addEventListener('mouseout', () => {
-  //   btnSelected.style.left = '60px';
-  //   btnSelected.style.transition = 'all 1s ease';
-  // });
-  // el.addEventListener('click', (eventClick) => {
-  //   if (i === 0) {
-  //     btnSelected.style.left = '60px';
-  //     console.log(`selectd:${i}`);
-  //   } else if (i === 1) {
-  //     btnSelected.style.left = '510px';
-  //     btnSelected.style.transition = 'all 1s ease';
-  //     console.log(`selectd:${i}`);
-  //   }
-
-
-  //   el.addEventListener('mouseover', (eventMouse) => {
-  //     if(eventMouse.isTrusted === true && eventClick.isTrusted === false)
-  //   });
-  // });
+  buttons.forEach((el, i) => {
+    el.addEventListener('click', () => {
+      if (i === 0) {
+        lessons.style.display = 'block';
+        tools.style.display = 'none';
+        buttons[0].classList.add('active');
+        buttons[1].classList.remove('active');
+      } else if (i === 1) {
+        tools.style.display = 'block';
+        lessons.style.display = 'none';
+        buttons[0].classList.remove('active');
+        buttons[1].classList.add('active');
+      }
+    });
+  });
 })();
 
 /*
