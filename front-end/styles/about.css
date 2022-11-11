@@ -13,7 +13,8 @@
 
 .me img {
     /* max-width: 415px; */
-    height: 344px;
+    /* height: 344px; */
+    height: 450px;
     border-radius: 20px;
     margin-right: 4rem;
     width: 100%;
@@ -61,10 +62,7 @@
 .carrer-description {
     background-color: #E4E6FE;
     color: #2A1D56;
-    /* padding: 2.5rem 0; */
     padding: 2.5rem 0 3rem 2.25rem;
-
-
 }
 
 .carrer-description h3 {
@@ -138,7 +136,7 @@
 .publications-container {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 430px));
+    grid-template-columns: repeat(auto-fill, minmax(auto, 330px));
     padding: 4rem 0 2rem 0;
 }
 
@@ -196,6 +194,7 @@
     
     .carrer-description {
         width: 50%;
+        max-height: 450px;
     
     }
     
@@ -205,5 +204,11 @@
         bottom: 10px;
         right: 0;
         left: 50%;
+    }
+}
+
+@media screen and (min-width: 920px) {
+    .me img {
+        height: 500px;
     }
 }

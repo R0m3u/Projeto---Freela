@@ -1,224 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="./styles/index.css"> -->
-    <link rel="stylesheet" href="./styles/./medical.css">
-    <link rel="stylesheet" href="./styles/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/./medical.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet"> -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@unocss/reset/tailwind.min.css"
+    />
+    <link rel="stylesheet" href="/styles/calendar.css" />
     <title>Juliana Severo Nutricionista</title>
-</head>
-<body>
+  </head>
+
+  <body>
     <!-- header -->
     <header class="fixed">
-        <div class="header-container">
-            <div class="overlay"></div>
-            <div class="logo">
-                <a href="./index.html">
-                    <img src="./assets/imgs/logos-versões-10.png" alt="Logo" title="logo" class="logo">
-                </a>
-            </div>
-            <div class="hamburguer-menu">
-                <div class="hamburguer"></div>
-            </div>
-            <nav class="menu menuClose">
-                <ul class="menu-items">
-                    <li><a href="./about.html">Sobre</a></li>
-                    <li><a href="./blog.html">Blog</a></li>
-                    <li><a href="./medical-appointment.html" class="selected">Consultas</a></li>
-                    <li><a href="./courses.html">Cursos</a></li>
-                    <li><a href="./free-content.html">Materiais Gratuitos</a></li>
-                </ul>
-            </nav>
+      <div class="header-container">
+        <div class="overlay"></div>
+        <div class="logo">
+          <a href="./index.html">
+            <img
+              src="./assets/imgs/logos-versões-10.png"
+              alt="Logo"
+              title="logo"
+              class="logo"
+            />
+          </a>
         </div>
+        <div class="hamburguer-menu">
+          <div class="hamburguer"></div>
+        </div>
+        <nav class="menu menuClose">
+          <ul class="menu-items">
+            <li><a href="./about.html">Sobre</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li>
+              <a href="./medical-appointment.html" class="selected"
+                >Consultas</a
+              >
+            </li>
+            <li><a href="./courses.html">Cursos</a></li>
+            <li><a href="./free-content.html">Materiais Gratuitos</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <!-- header -->
     <main>
-        <section class="medical-apresentation">
-          <div class="medical-overlay"></div>
-          <h2 class="medical-title">CONSULTAS</h2>
-          <p class="medical-description">
-            Atendimentos para pessoas a partir de 18 anos.
-          </p>
-        </section>
-        <section class="medical-specialities">
-          <h2>Especialidades</h2>
-          <div class="specialities-container">
-            <div class="card card1">
-              <div class="img-course">
-                <img src="/assets/imgs/wind.jpg" alt="">
-              </div>
-              <div class="course-description">
-                <h4>Title</h4>
-                <p>
-                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-              </div>
-            </div>
-            <div class="card card1">
-              <div class="img-course">
-                <img src="/assets/imgs/wind.jpg" alt="">
-              </div>
-              <div class="course-description">
-                <h4>Title</h4>
-                <p>
-                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-              </div>
-            </div>
-            <div class="card card1">
-              <div class="img-course">
-                <img src="/assets/imgs/wind.jpg" alt="">
-              </div>
-              <div class="course-description">
-                <h4>Title</h4>
-                <p>
-                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-              </div>
+      <section class="medical-apresentation">
+        <div class="medical-overlay"></div>
+        <h2 class="medical-title">CONSULTAS</h2>
+        <p class="medical-description">
+          Atendimentos para pessoas a partir de 18 anos.
+        </p>
+      </section>
+      <section class="medical-specialities">
+        <h2>Especialidades</h2>
+        <div class="specialities-container">
+          <div class="card card1">
+            <div class="course-description">
+              <h4>Obesidade</h4>
+              <p>
+                caracterizada pelo excesso de gordura corporal, o que pode
+                resultar em aumento do risco de eventos cardiovasculares e de
+                outras doenças crônicas, como diabetes.
+              </p>
             </div>
           </div>
-        </section>
-        <section class="about-med-apointments">
-          <h2>Sobre as consultas</h2>
-          <div class="description">
-            <div class="levels-apointments">
-              <p>A consulta é dividida em três etapas:</p>
-              
-              <p class="underline">
-                Na primeira etapa, é uma análise do: Histórico clínico, Alimentação, Questões psicológicas que você queira compartilhar, 
-                Questões sociais, Questões sociais;
-              </p>
-            </div>
-            <div class="more-details">
+          <div class="card card1">
+            <div class="course-description">
+              <h4>Diabetes</h4>
               <p>
-                Tudo isso é importante para entender suas necessidades 
-                nutricionais e fatores que possam afetar sua alimentação.
+                grupo de doenças em que ocorre um aumento do nível de açúcar
+                (glicose) no sangue de forma contínua. As complicações podem
+                ser: doença renal, cegueira, dores, dentre outros.
               </p>
-              <p>
-                Na segunda parte, você aprenderá um pouco sobre como se alimentar
-                melhor, quais as melhores escolhas alimentares e possíveis limitações na sua dieta.
-              </p>
-              <p>
-                Por último, será elaborado um plano de ação que se adeque aos seus objetivos e 
-                necessidades alimentares, que você terá acesso em documento e por aplicativo.
-              </p>
-              <p>
-                + O aplicativo irá lembrar você das refeições, terá seu diário alimentar e você 
-                poderá conversar comigo através dele, quando precisar! Assim você poderá seguir a dieta sem dúvidas.
-              </p>
-              <p>
-                ++ Você tem direito a um retorno no período de um mês após sua consulta, no qual você será reavaliado
-                e o plano alimentar será ajustado, caso necessário.
-              </p>
-              <p>
-                Para ter acesso à consulta, ser acompanhado de perto através do aplicativo e ser reavaliado 
-                durante o retorno, você precisará investir apenas R$ 400,00.
-              </p>
-            </div>
-            
-            <div class="know-me">
-              <p>
-                Gostaria de conhecer mais sobre mim e entender quais são minhas qualificações antes de marcar uma consulta?
-              </p>
-              <a href="./about.html" target="_blank">Clique aqui</a>
             </div>
           </div>
-        </section>
-        <section class="appointment-booking">
-          <section class="appointment-container">
-            <h2>Marque uma consulta</h2>
-            <div class="box">
-              <div class="pacient-info">
-                <div class="block1">
-                  <p>informações pessoais*</p>
-                  <input type="text" name="" id="" placeholder="Nome">
-                  <input type="text" name="" id="" placeholder="Sobrenome">
-                </div>
-                <div class="block2">
-                  <p>informações pessoais*</p>
-                  <div>
-                    <input type="number" name="" id="" class="country-num" placeholder="DDI">
-                    <input type="text" name="" id="" placeholder="Número de celular com DDD">
+          <div class="card card1">
+            <div class="course-description">
+              <h4>Doenças cardiovasculares</h4>
+              <p>
+                grupos de diversas doenças que afetam o coração e os vasos
+                sanguíneos. Pode levar a infarto, acidente vascular encefálico
+                (antes conhecido como AVC), dentre outras complicações.
+              </p>
+            </div>
+          </div>
+          <div class="card card1">
+            <div class="course-description">
+              <h4>Saúde da mulher</h4>
+              <p>
+                fertilidade, menopausa, TPM. É importante cuidar da alimentação
+                para diminuir o impacto dos sintomas nessas fases de vida da
+                mulher. No caso da fertilidade, a alimentação saudável é
+                essencial para conseguir engravidar e ter uma gestação com menos
+                risco para a mãe e para o bebê.
+              </p>
+            </div>
+          </div>
+          <div class="card card1">
+            <div class="course-description">
+              <h4>Síndrome metabólica</h4>
+              <p>
+                conjunto de fatores de risco que aumentam o risco cardiovascular
+                de forma significativa, caracterizada pelo aumento do nível de
+                açúcar no sangue, alterações na pressão arterial e no perfil
+                lipídico.
+              </p>
+            </div>
+          </div>
+          <div class="card card1">
+            <div class="course-description">
+              <h4>Doenças cardiovasculares</h4>
+              <p>
+                grupos de diversas doenças que afetam o coração e os vasos
+                sanguíneos. Pode levar a infarto, acidente vascular encefálico
+                (antes conhecido como AVC), dentre outras complicações.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about-med-apointments">
+        <h2>Sobre as consultas</h2>
+        <div class="description">
+          <div class="levels-apointments">
+            <p>A consulta é dividida em três etapas:</p>
+
+            <p class="underline">
+              Na primeira etapa, é uma análise do: Histórico clínico,
+              Alimentação, Questões psicológicas que você queira compartilhar,
+              Questões sociais, Questões sociais;
+            </p>
+          </div>
+          <div class="more-details">
+            <p>
+              Tudo isso é importante para entender suas necessidades
+              nutricionais e fatores que possam afetar sua alimentação.
+            </p>
+            <p>
+              Na segunda parte, você aprenderá um pouco sobre como se alimentar
+              melhor, quais as melhores escolhas alimentares e possíveis
+              limitações na sua dieta.
+            </p>
+            <p>
+              Por último, será elaborado um plano de ação que se adeque aos seus
+              objetivos e necessidades alimentares, que você terá acesso em
+              documento e por aplicativo.
+            </p>
+            <p>
+              + O aplicativo irá lembrar você das refeições, terá seu diário
+              alimentar e você poderá conversar comigo através dele, quando
+              precisar! Assim você poderá seguir a dieta sem dúvidas.
+            </p>
+            <p>
+              ++ Você tem direito a um retorno no período de um mês após sua
+              consulta, no qual você será reavaliado e o plano alimentar será
+              ajustado, caso necessário.
+            </p>
+            <p>
+              Para ter acesso à consulta, ser acompanhado de perto através do
+              aplicativo e ser reavaliado durante o retorno, você precisará
+              investir apenas R$ 400,00.
+            </p>
+          </div>
+
+          <div class="know-me">
+            <p>
+              Gostaria de conhecer mais sobre mim e entender quais são minhas
+              qualificações antes de marcar uma consulta?
+            </p>
+            <a href="./about.html" target="_blank">Clique aqui</a>
+          </div>
+        </div>
+      </section>
+      <section class="appointment-booking">
+        <div class="appointment-container">
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.5/dayjs.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.11.5/locale/pt-br.min.js"></script>
+          <script type="module">
+            import {
+              createApp,
+              reactive,
+            } from "https://unpkg.com/petite-vue?module";
+            import {
+              formDirective,
+              rulesDirective,
+              maskDirective,
+            } from "/scripts/directives.js";
+            import { Calendar, form } from "/scripts/factories.js";
+
+            dayjs.locale("pt-BR");
+
+            createApp({
+              form,
+              Calendar,
+            })
+              .directive("form", formDirective)
+              .directive("rules", rulesDirective)
+              .directive("mask", maskDirective)
+              .mount();
+          </script>
+
+          <div>
+            <form v-scope="form" v-form="{onSubmit: submit, onReset: reset}">
+              <h2>Marque uma consulta</h2>
+              <!-- <pre>{{data}}</pre> -->
+              <div class="box">
+                <div class="pacient-info">
+                  <div class="block1">
+                    <p>informações pessoais*</p>
+                    <input
+                      v-model="data.name"
+                      v-rules="[name => !!name || 'Nome é um campo obrigatório']"
+                      type="text"
+                      name=""
+                      id=""
+                      placeholder="Nome completo"
+                    />
                   </div>
-               </div>
-                <div class="block3">
-                  <p>informações adicionais</p>
-                  <textarea placeholder="informe qualquer informação que deseje compartilhar com o doutor antes da consulta"></textarea>
-                </div>
-                <div class="block4">
-                  <p>Tipo de consulta*</p>
-                  <div class="input">
-                    <select name="" id="">
-                      <option value="opcao 2">opcao 1</option>
-                      <option value="opcao 2">opcao 2</option>
-                    </select>
-                    <span class="btn">Alterar</span>
-                  </div>
-                </div>
-                <div class="block5">
-                  <p>É sua primeira consulta?</p>
-                  <div class="options">
-                    <input type="radio" value="sim" id="sim" name="first_consultation">
-                    <label for="sim">Sim</label>
-                    <input type="radio" value="não" id="nao" name="first_consultation">
-                    <label for="nao">Não</label>
-                  </div>
-                </div>
-              </div>
-              <div class="day-marking">
-                <div class="calendar">
-                  <div class="month-year">
-                    <span class="month">Maio</span> 
-                    <span class="year">
-                      <span class="arrow-left"><</span>
-                      2022
-                      <span class="arrow-right">></span>
-                    </span>
-                  </div>
-                  <div class="week-days">
-                    <span class="selected">S</span>
-                    <span>T</span>
-                    <span>Q</span>
-                    <span>Q</span>
-                    <span>S</span>
-                    <span>S</span>
-                    <span>D</span>
-                  </div>  
-                  <div class="days"></div>
-                </div>
-                <div class="time-stamp">
-                  <p>Horário da consulta*</p>
-                  <div class="hour-select">
-                    <div class="hour">
-                      <span>00</span>
-                      <span>:</span>
-                      <span>00</span>
+                  <div class="block2">
+                    <p>informações de contato*</p>
+                    <div>
+                      <input
+                        v-model="data.cell"
+                        type="text"
+                        name=""
+                        id=""
+                        placeholder="Número de celular mais o DDD*"
+                        v-rules="[cell => [14,15].includes(cell.length) || 'Numero invalido']"
+                        v-mask="['(##) ####-####','(##) #####-####']"
+                      />
                     </div>
-                    <span class="system-hour">AM</span>
+                  </div>
+                  <div class="block6 block2">
+                    <div>
+                      <input
+                        v-model="data.email"
+                        type="email"
+                        name=""
+                        id=""
+                        placeholder="email*"
+                        v-rules="[val => !!val || 'Email is required!', val => /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/i.test(val) || 'Need to be a valid email!!!']"
+                      />
+                    </div>
+                  </div>
+                  <div class="block3">
+                    <p>informações adicionais</p>
+                    <textarea
+                      v-model="data.info"
+                      placeholder="informe qualquer informação que deseje compartilhar com o doutor antes da consulta"
+                    ></textarea>
+                  </div>
+                  <div class="block4">
+                    <p>Tipo de consulta*</p>
+                    <div class="input">
+                      <select v-model="data.consultType" name="" id="">
+                        <option value="presencial">presencial</option>
+                        <option value="online">online</option>
+                      </select>
+                      <span class="btn">Alterar</span>
+                    </div>
+                  </div>
+                  <div class="block5">
+                    <p>É sua primeira consulta?</p>
+                    <div class="options">
+                      <input
+                        v-model="data.firstConsult"
+                        type="radio"
+                        value="yes"
+                        id="sim"
+                        name="first_consultation"
+                      />
+                      <label for="sim">Sim</label>
+                      <input
+                        v-model="data.firstConsult"
+                        type="radio"
+                        value="no"
+                        id="nao"
+                        name="first_consultation"
+                      />
+                      <label for="nao">Não</label>
+                    </div>
+                  </div>
+                  <a class="more-btn urgency" href="https://wa.me/5586999902368"
+                    >Preciso com urgencia</a
+                  >
+                </div>
+                <div v-scope="Calendar()" class="day-marking">
+                  <div class="p-4 grid md:grid-cols-[30%_70%] gap-3">
+                    <div class="calendar p-4 border-1 rounded-2 md:mr-4">
+                      <div class="pb-3 flex items-center gap-3">
+                        <i
+                          class="cursor-pointer rounded-2 hover:bg-gray-1"
+                          @click="subtractMonth"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            fill="none"
+                            stroke="#5D338B"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="3"
+                            viewBox="0 0 24 24"
+                          >
+                            <path fill="none" stroke="none" d="M0 0h24v24H0z" />
+                            <path d="m15 6-6 6 6 6" />
+                          </svg>
+                        </i>
+                        <h5 class="month">{{currentMonth + ' ' + year}}</h5>
+                        <i
+                          class="cursor-pointer rounded-2 hover:bg-gray-1"
+                          @click="addMonth"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            fill="none"
+                            stroke="#5D338B"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="3"
+                            viewBox="0 0 24 24"
+                          >
+                            <path fill="none" stroke="none" d="M0 0h24v24H0z" />
+                            <path d="m9 6 6 6-6 6" />
+                          </svg>
+                        </i>
+                      </div>
+                      <ul
+                        class="p-0 pb-2 grid grid-cols-7 gap-1 list-none text-center"
+                      >
+                        <li v-for="day in days" class="days">{{day}}</li>
+                      </ul>
+                      <ul
+                        class="p-0 grid grid-cols-7 gap-1 list-none text-center"
+                      >
+                        <li v-for="blank in firstDayOfMonth"></li>
+                        <li
+                          v-for="date in daysInMonth"
+                          class="p-1 rounded-3"
+                          :class="{
+                                        'cursor-pointer': canSelectDate(date),
+                                        'bg-gray-1 cursor-not-allowed': !canSelectDate(date),
+                                        'ring-3 ring-offset-1': isToday(date),
+                                        'bg-purple text-white': isSelected(date)
+                                        }"
+                          @click="selectDate(date)"
+                        >
+                          <span>{{date}}</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="time-stamp">
+                    <p>Horário da consulta*</p>
+                    <div class="hour-select">
+                      <div class="hour">
+                        <span>00</span>
+                        <span>:</span>
+                        <span>00</span>
+                      </div>
+                      <span class="system-hour">AM</span>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div> 
-            <section class="terms">
-              <div class="accept">
-                <input type="checkbox" id="accept">
-                <label for="accept">Confirmo meus dados, e desejo agendar a consulta</label>
+              <div class="terms">
+                <div class="accept">
+                  <input type="checkbox" id="accept" />
+                  <label for="accept"
+                    >Confirmo meus dados, e desejo agendar a consulta</label
+                  >
+                </div>
+                <div>
+                  <button type="submit" class="confirm-btn">Confirmar</button>
+                </div>
               </div>
-              <div>
-                <a href="#" class="confirm-btn">Confirmar</a>
-              </div>
-            </section> 
-          </section>
-        </section>
-      </main> 
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer>
       <section class="info">
         <div class="contact">
@@ -231,22 +403,37 @@
         </div>
         <div class="social-media">
           <p class="main-title">Redes Sociais</p>
-          <a href="https://www.instagram.com/julianaseverodra/" class="instagram">
-            <img src="/assets/imgs/instagram.png" alt="instagram" title="instagram">
+          <div></div>
+          <a
+            href="https://www.instagram.com/julianaseverodra/"
+            class="instagram"
+          >
+            <img
+              src="/assets/imgs/instagram.png"
+              alt="instagram"
+              title="instagram"
+            />
           </a>
           <a href="https://wa.me/5586999902368" class="whatsapp">
-            <img src="/assets/imgs/whatsapp.png" alt="whatsapp" title="whatsapp">
+            <img
+              src="/assets/imgs/whatsapp.png"
+              alt="whatsapp"
+              title="whatsapp"
+            />
           </a>
         </div>
       </section>
       <section class="copyright">
-        <p>&#169;Copyright </p><span>|</span>
-        <p>Name </p><span>|</span>
+        <p>&#169;Copyright</p>
+        <span>|</span>
+        <p>Name</p>
+        <span>|</span>
         <p>Lorem Lorem</p>
       </section>
     </footer>
-    <script src="./node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
-    <script src="./scripts/dateTimePicker.js"></script>
     <script src="./scripts/main.js"></script>
-</body>
+  </body>
 </html>
+
+<!-- falta colocar mascaras para os campos do formulario -->
+<!-- terminar formulario, colocando estilo de dias disponiveis e selecao de horario -->

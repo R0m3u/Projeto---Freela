@@ -262,15 +262,9 @@ footer .info {
     margin-bottom: 3rem;
 }
 
-.contact,
-.clinic {
-    /* margin-right: 1rem; */
-}
-
 .social-media img {
     margin-right: 1rem;
 }
-
 
 .contact .main-title,
 .clinic .main-title,
@@ -361,7 +355,7 @@ footer .copyright {
         align-items: center;
         justify-content: right;
         height: 100%;
-        width: 80%;
+        /* width: 80%; */
         margin-right: 2.5rem;
         /* margin: 0; */
         top: 0;
@@ -394,7 +388,7 @@ footer .copyright {
 
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 599px) {
     /*========================MEDIA QUERIE - HEADER/MENU CSS==================================*/
     .card-presentation {
         height: 100vh;
@@ -410,6 +404,7 @@ footer .copyright {
 
     .card-presentation .content {
         position: relative;
+        height: 100%;
     }
 
     .content .buttons {
@@ -427,8 +422,3 @@ footer .copyright {
     /*========================MEDIA QUERIE - HEADER/MENU CSS==================================*/
 }
 
-@media screen and (min-width: 1020px) {
-    .menu-items {
-        left: 230px;
-    }
-}

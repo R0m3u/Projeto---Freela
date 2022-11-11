@@ -79,7 +79,7 @@ body {
 }
 
 .free-lesson {
-    margin-top: 9rem;
+    margin-top: 7rem;
 }
 
 .lesson-btn,
@@ -113,9 +113,16 @@ body {
     border-bottom-right-radius: 1rem;
 }
 
+.showBlock {
+    display: block;
+    animation: UpToDown .4s;
+}
 
+.hideBlock {
+    display: none;
+}
 .tools-for-service {
-    margin-top: 9rem;
+    margin-top: 7rem;
 }
 
 @keyframes UpToDown {
@@ -196,6 +203,10 @@ body {
     width: 100%;
 
 }
+
+/* .free-tools {
+    display: none;
+} */
 
 @media screen and (max-width: 767px) {
     .btn-container {

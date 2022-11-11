@@ -97,8 +97,8 @@
     max-width: 300px;
 }
 
-.img-course img {
-    max-width: 300px;
+.course-description {
+    border-radius: 30px;
 }
 
 /* ============MAIN / ESPECIALIDADES MEDICAS========================= */
@@ -170,7 +170,8 @@
 .block4 ::-webkit-input-placeholder,
 .block5 ::-webkit-input-placeholder {
     font-weight: 900;
-    color: #5D338B;
+    color: (93 51 139 / 30%);
+    
 }
 
 
@@ -178,10 +179,6 @@
     width: 100%;
     display: block;
     margin-bottom: 1rem;
-}
-
-.block2 div {
-    display: flex;
 }
 
 .block2 .country-num { 
@@ -212,8 +209,20 @@
 }
 
 .block2 input {
-    width: 80%;
+    width: 100%;
 }
+
+.message-label {
+    font-weight: 700;
+    margin-top: 1rem;
+    color: red;
+
+}
+
+input[haserror=true] {
+    outline: red solid 2px;
+    outline-offset: 2px;
+} 
 
 .block3 textarea {
     resize: none;
@@ -228,7 +237,7 @@
 }
 
 .block3 ::-webkit-input-placeholder {
-    color: #5D338B;
+    color: (93 51 139 / 30%);
 }
 
 .block4 .input {
@@ -276,6 +285,7 @@
     font-weight: 600;
 }
 
+
 .options input {
     margin-right: 15px;
 }
@@ -288,14 +298,26 @@
     margin: 0;
 }
 
+.block6 {
+    margin-top: 1rem;
+}
+
+.urgency {
+    font-size: 1rem!important;
+    background-color: #874dc5;
+    color: #fff;
+    padding: 1rem .3rem!important;
+    display: block;
+    width: 100%!important;
+}
 
 .about-med-apointments {
     max-width: 900px;
     margin: 0 auto;
     color: #5D338B;
     font-size: 1.2rem;
-    padding: 0 2rem;
-}
+    padding: 0 1rem;
+} 
 
 .about-med-apointments h2 {
     text-align: center;
@@ -355,6 +377,7 @@
     text-decoration: none;
     font-weight: 700;
     transition: all .4s ease;
+    color: #5D338B;
 }
 
 .know-me a:hover {
@@ -365,9 +388,9 @@
 /*========================MAIN / CALENDARIO=============*/
 
 .day-marking {
-    max-width: 270px;
+    /* max-width: 270px; */
     width: 100%;
-    margin: 4rem auto 0 auto;
+    /* margin: 4rem auto 0 auto; */
     align-items: center;
 }
 
@@ -377,6 +400,19 @@
     background-color: #F6F6F6;
     padding: 1rem 1.7rem .5rem 1.7rem;
     border-radius: 30px;
+    position: relative;
+    margin: 4rem auto 0 auto;
+    
+}
+
+.months {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
 }
 
 .month-year {
@@ -441,6 +477,19 @@
     color: #fff;
 }
 
+.full-date {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #5D338B;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.today {
+    background-color: #5D338B;
+    color: #fff!important;
+}
+
 .week-days {
     background-color: #341C4D;
     color: #fff;
@@ -473,17 +522,22 @@
 
 .selected {
     background-color: #5D338B;
+    transition: all .4s ease;
 }
 
-.days {
+.daysContainer {
     display: grid;
-    grid-template-columns: repeat(7, max-content);
+    /* grid-template-columns: repeat(7, max-content); */
+    grid-template-columns: repeat(7, 35px);
     justify-items: center;
+    justify-content: center;
     margin-top: 1rem;
+    position: relative;
 }
 
 
-.days p {
+.daysContainer p {
+    margin: 0 auto;
     width: 29px;
     height: 40px;
     padding: 1px 0;
@@ -491,11 +545,57 @@
     color: #5D338B; 
     line-height: 40px;
     border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all ease .4s;
 }
 
-.days p:hover {
+.daysContainer p:hover {
     background-color: #5D338B;
     color: #fff;
+}
+
+.day,
+.today {
+    animation: showUp .9s;
+
+}
+
+@keyframes showUp {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1; 
+    }
+}
+
+@keyframes showUpNp {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: .3; 
+    }
+}
+
+.prev-date, 
+.next-date {
+
+    opacity: .3;
+    animation: showUpNp .9s;
+    
+    /* display: none; */
+}
+
+.daySelected {
+    border: 2px solid #5D338B;
 }
 
 /*==========MAIN / SELECAO DE HORARIO========================================*/
@@ -577,21 +677,54 @@
 .confirm-btn {
     text-decoration: none;
     color: #5D338B;
-    background-color: #fff;
+    background-color: #fff !important;
     font-weight: 700;
     font-size: 1.2rem;
-    height: 70px;
+    /* height: 70px; */
     padding: .6rem 1rem;
-    line-height: 70px;
+    /* line-height: 70px; */
     border-radius: 50px;
     transition: all .4s ease;
 }
 
 .confirm-btn:hover {
-    background-color: #5D338B;
+    background-color: #5D338B!important;
     color: #fff;
 }
 
+.avaible-day {
+    color: rgb(18, 209, 75) !important;
+}
+
+.time-selection {
+    height: 200px;
+    width: 90px;
+    background-color: rgb(218, 218, 218);
+    position: absolute;
+    right: -100px;
+    border-radius: 20px;
+}
+
+.time-selection p {
+    cursor: pointer;
+    text-align: center;
+    font-weight: 700;
+    color: #5D338B;
+    margin-top: 1rem;
+}
+
+.visible {
+    display: block;
+}
+
+.invisible {
+    display: none;
+}
+
+.whatsapp img,
+.instagram img {
+    display: inline!important;
+}
 /* ============MAIN / MARCAÇÃO DE CONSULTAS========================= */
 
 @media screen and (min-width: 600px) {
@@ -601,6 +734,7 @@
         padding: 0 2rem;
         margin-top: 3rem;
         max-width: 100%;
+        z-index: 9;
     }
 
     .time-stamp {
@@ -609,6 +743,10 @@
 }
 
 @media screen and (min-width:768px) {
+    .calendar {
+        margin-top: 0;
+    }
+
     .medical-apresentation {
         background: url("/assets/imgs/consultas_back.png") no-repeat;
         background-size: 100% 100%;
@@ -671,8 +809,4 @@
         margin: 2.063rem 0 0 0;
         width: 290px;
     }
-}
-
-@media screen {
-    
 }
